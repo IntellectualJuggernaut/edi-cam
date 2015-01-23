@@ -5,7 +5,10 @@
 # latest release, and replace in the shell script.
 
 # CHANGE THIS TO THE APPROPRIATE FILENAME
-FNAME=ffmpeg-2.4.3-32bit-static.tar.xz
+
+FNAME="$1"
+
+: ${FNAME:="ffmpeg-release-32bit-static.tar.xz"}
 
 echo Downloading ffmpeg...
 mkdir /home/root/bin
